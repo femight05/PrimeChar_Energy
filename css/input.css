@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+#over{
+    height: 26rem;
+}
