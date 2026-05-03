@@ -8,28 +8,28 @@
     <title>PrimeChar</title>
 </head>
 <body>
-    <section id="nav" style="background-image: url('./Images/Heroimg.jpg');" class="relative h-screen min-w-full bg-center bg-cover bg-no-repeat">
+    <section id="nav" style="background-image: url('./Images/Heroimg.jpg');" class="relative h-screen max-w-full bg-center bg-cover bg-no-repeat">
         <div class="absolute bg-black/60 inset-0 z-0 backdrop:blur-lg"></div>
         <nav class="flex justify-between items-center h-12 mx-12 p-4">
-            <div class="absolute text-3xl mt-3 ml-3 text-white cursor-pointer">
+            <div class="absolute text-2xl md:text-2xl lg:text-3xl mt-3 ml-3 text-white cursor-pointer">
                 PrimeChar Energy
             </div>
-            <div class="absolute right-20 list-none flex justify-between items-center space-x-6 text-white mr-4 mt-3">
-                <li><a href="#" class="cursor-pointer hover:text-red-500">HOME</a></li>
-                <li><a href="#" class="cursor-pointer hover:text-red-500">ABOUT US</a></li>
-                <li><a href="#" class="cursor-pointer hover:text-red-500">BLOG</a></li>
-                <li><a href="#" class="cursor-pointer hover:text-red-500">CONTACT US</a></li>
+            <div class="hidden absolute right-20 list-none lg:flex justify-between items-center space-x-6 text-white mr-4 mt-3">
+                <li><a href="#nav" class="cursor-pointer hover:text-red-500">HOME</a></li>
+                <li><a href="#about" class="cursor-pointer hover:text-red-500">ABOUT US</a></li>
+                <li><a href="#news" class="cursor-pointer hover:text-red-500">BLOG</a></li>
+                <li><a href="#contact" class="cursor-pointer hover:text-red-500">CONTACT US</a></li>
                 <li><a href="#" class="border border-whiteSS px-3 py-2 bg-green-700 hover:bg-red-500">SHOP NOW</a></li>
             </div> 
         </nav>
         <!-- Hero Message -->
-        <div class="relative z-10 ml-20 pt-8 mt-24 space-y-4">
-            <h1 class="text-5xl text-white font-semibold">Light It Up with Quality Charcoal</h1>
-            <h1 class="text-5xl text-white font-semibold">Stronger heat. Less smoke. Better cooking.</h1>
+        <div class="relative z-10 ml-20 pt-8 mt-12 lg:mt-24 space-y-7 lg:space-y-4">
+            <h1 class="sm:text-3xl md:text-4xl lg:text-5xl text-white font-semibold">Light It Up with Quality Charcoal</h1>
+            <h1 class="sm:text-3xl md:text-4xl lg:text-5xl text-white font-semibold">Stronger heat. Less smoke. Better cooking.</h1>
             <p class="text-md tracking-wide text-white mb-20">
                 Eco-friendly hardwood charcoal designed for clean, long-lasting performance in grills and restaurants
             </p>
-            <div class="space-x-3 pt-4">
+            <div class="md:space-x-3 pt-4 flex flex-col items-start space-y-4 sm:block md:block md:space-y-0">
                 <a href="#" class="px-6 py-2 bg-green-700 text-white hover:bg-red-600">SHOP NOW</a>
                 <a href="#" class="px-6 py-2 text-white border border-green-700 hover:bg-red-600 hover:border-white">CONTACT US</a>
             </div>
@@ -37,35 +37,38 @@
     </section>
     <!-- Why Section -->
     <section id="why">
-        <div class="h-96 w-full mx-auto p-6 space-y-4 bg-white/60">
-            <h1 class="text-4xl tracking-wide text-center font-semibold">
+        <div class="h-screen lg:h-96 w-full mx-auto p-6 space-y-4 bg-white/60">
+            <h1 class="text-3xl lg:text-4xl tracking-wide text-center font-semibold">
                 Why Choose PrimeChar Energy
             </h1>
-            <p class="text-xl text-center">
+            <p class="text-sm lg:text-xl text-center">
                 Experience premium heat, pure quality and sustainable performance with PrimeChar Energy
             </p>
-            <div class="flex items-center mx-8 space-x-3">
-                <div id="card" class="h-60 w-1/4 rounded border border-b-red-500 border-r-8 flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
+            <div class="flex flex-col lg:flex-row items-center mx-8 lg:space-x-3 space-y-5 lg:space-y-0">
+                <div id="card" class="h-40 md:h-52 lg:h-60 max-w-full lg:w-1/4 rounded border border-b-red-500 border-r-8 flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
                     <div class="text-center text-xl"><i class="fa-solid fa-hourglass"></i></div>
                     <h2 class="text-center font-bold">
                         Long-Lasting Burn
                     </h2>
-                    <p class="text-center text-sm">
+                    <p class="text-center text-xs md:text-sm">
                         Our hardwood charcoal is made from dense, premium wood species that burn longer and
                         hotter - perfect for restuarants, grills and BBQ lovers who value consistent heat.
                     </p>
                 </div>
-                <div id="card" class="h-60 w-1/4 rounded border border-b-red-500 border-r-4 flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
+                <div id="card" class="h-40 md:h-52 lg:h-60 max-w-full lg:w-1/4 rounded border border-b-red-500 border-r-4 flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
                     <div class="text-center text-xl"><i class="fa-regular fa-cloud"></i></div>
-                    <h2 class="text-center font-bold">
-                        Low Smoke, High Performance 
+                    <h2 class="hidden sm:block text-center font-bold">
+                        Low Smoke, High Performance
                     </h2>
-                    <p class="text-sm text-center">
+                    <h2 class="text-center font-bold sm:hidden">
+                        Low Smoke
+                    </h2>
+                    <p class="text-xs md:text-sm text-center text-wrap">
                      Enjoy a cleaner grilling experience . Our charcoal produces minimal smoke and ash,
                      allowing food's natural favour to shine.
                     </p>
                 </div>
-                <div id="card" class="h-60 w-1/4 rounded border border-b-red-500 border-r-4 flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
+                <div id="card" class="hidden lg:flex h-60 w-1/4 rounded border border-b-red-500 border-r-4 flex-wrap flex-col p-4 justify-between space-y-2 items-center">
                     <div class="text-center text-xl"><i class="fa-regular fa-truck"></i></div>
                     <h2 class="text-center font-bold">
                         Trusted Quality & Reliable Supply
@@ -75,7 +78,7 @@
                         South Africa and beyond.
                     </p>
                 </div>
-                <div id="card" class="h-60 w-1/4 rounded border border-b-red-500 border-r-4 shadow-2xl flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
+                <div id="card" class="hidden h-60 w-1/4 rounded border border-b-red-500 border-r-4 shadow-2xl lg:flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
                     <div class="text-center text-xl"><i class="fa-solid fa-hand-holding"></i></div>
                     <h2 class="text-center font-bold mb-4">
                         100% Natural & Eco-Friendly 
@@ -89,14 +92,14 @@
         </div>
     </section>
     <section id="about">
-        <div class="h-96 mx-auto p-16 flex justify-between bg-gray-300/60">
+        <div class="lg:h-96 h-screen mx-auto p-16 flex flex-col-reverse lg:flex-row justify-between bg-gray-300/60">
             <!--Left-->
-            <div class="w-1/2 space-y-4">
+            <div class="lg:w-1/2 w-full space-y-6 sm:space-y-4 mt-5 lg:mt-0">
                 <h3 class="font-semibold tracking-wide">About PrimeChar Energy</h3>
-                <h1 class="font-bold text-2xl">
+                <h1 class="font-bold text-xl lg:text-2xl">
                     Hardwood Charcoal Supplier in South Africa
                 </h1>
-                <p class="pb-5">
+                <p class="pb-5 sm:text-sm lg:text-lg">
                     PrimeChar Energy is a South Africa based Charcoal supplier, delivering premium, eco-friendly hardwood
                     charcoal to homes and businesses across South Africa. Our products are sustainably sourced, clean-burning and
                     crafted for long-lasting performance - trusted by restaurants, BBQ lovers, and industry professionals alike.
@@ -105,41 +108,41 @@
             </div>
             <!-- Right Image-->
              <div class="">
-                <img src="./Images/about.jpg" alt="PrimeChar Company" class="h-full rounded-2xl w-full">
+                <img src="./Images/about.jpg" alt="PrimeChar Company" class="hidden sm:block sm:h-full md:h-full rounded-2xl w-full">
              </div>
         </div>
     </section>
-    <section id="overview">
-        <div id="over" class="flex flex-col items-center p-16 space-y-6">
-            <h1 class="text-center text-3xl font-semibold">
+    <section id="overview" class="">
+        <div id="over" class="min-h-96 md:max-h-screen flex flex-col justify-evenly items-center gap-8 md:gap-0 p-6 md:p-16 space-y-2 md:space-y-6">
+            <h1 class="text-center text-3xl leading-3 md:leading-none md:text-2xl lg:text-3xl font-semibold">
                 Products Overview
             </h1>
-            <p class="text-center pt-2">
+            <p class="text-center text-lg lg:text-lg md: pt-2">
                 Discover our range of premium, eco-friendly charcoal products crafted for both home
                 and professional use.
             </p>
-            <div id="high" class="flex items-center h-96">
-            <div class="flex flex-col space-y-4 h-72 w-1/4 p-4">
-                <img src="./Images/card.jpg" alt="card1" class="h-32 w-full">
+            <div id="high" class="flex flex-col md:flex-row items-center h-96">
+            <div class="flex mt-0 flex-col space-y-2 md:space-y-4 h-52 md:h-72 md:w-1/4 p-4">
+                <img src="./Images/card.jpg" alt="card1" class="h-24 min-w-fit md:h-32 md:w-full">
                 <h3 class="text-center font-semibold">
                     Restaurant Grade Charcoal
                 </h3>
-                <p>
+                <p class="text-xs md:text-sm">
                   High-density charcoal designed for chefs - delivers consistent heat and minimal
                   ash for professional cooking.
                 </p>
             </div>
-            <div class="flex flex-col w-1/4 space-y-4 h-72 p-4">
+            <div class="flex flex-col space-y-2 md:w-1/4 md:space-y-4 h-52 md:h-72 p-4">
                 <img src="./Images/card 2.jpg" alt="card2" class="h-32 w-full">
                 <h3 class="text-center font-semibold">
                     Premium Hardwood Charcoal
                 </h3>
-                <p>
+                <p class="text-xs md:text-sm">
                     100% natural hardwood charcoal for consistent heat and rich smoky flavor - prefect for 
                     grilling and restaurants.
                 </p>
             </div>
-            <div class="flex flex-col w-1/4 p-4 h-72 space-y-2">
+            <div class="hidden md:flex flex-col w-1/4 p-4 h-72 space-y-2">
                 <img src="./Images/card3.jpg" alt="card3" class="h-32 w-full">
                 <h3 class="text-center font-semibold pt-2">
                     Hardwood Lump Charcoal
@@ -149,7 +152,7 @@
                    authentic flavor.
                 </p>
             </div>
-            <div class="flex flex-col w-1/4 p-4 h-72 space-y-4">
+            <div class="hidden md:flex flex-col w-1/4 p-4 h-72 space-y-4">
                 <img src="./Images/card1.jpg" alt="card4" class="h-32 w-full">
                 <h3 class="text-center font-semibold">
                     Eco-friendly Charcoal Briquettes
@@ -159,13 +162,13 @@
                 </p>
             </div>
             </div>
-           <a href="#" class="px-6 py-2 bg-green-700 text-white mt-20 mb-8 hover:bg-red-600">READ MORE</a>
+           <a href="#" class="hidden sm:block px-3 py-1 md:px-6 md:py-2 bg-green-700 text-white md:mt-20 hover:bg-red-600 ">READ MORE</a>
         </div>
     </section>
 
     <section class="customers">
-        <div class="flex h-96 items-center mt-20 p-16 space-x-3">
-            <div class="h-full w-1/2 px-2 space-y-2">
+        <div class="flex flex-col md:flex-row h-screen md:h-96 items-center mt-48 md:mt-20 p-16 space-x-3">
+            <div class="h-full w-full md:w-1/2 px-2 space-y-2">
                 <h2 class="text-green-700 tracking-wide">Client Reviews</h2>
                 <h1 class="font-bold text-3xl">
                     What Our <br>
@@ -173,7 +176,7 @@
                 </h1>
                 <p class="text-wrap">Don't just like our word for it. Here's what our satisifed customers have say about our services.</p>
             </div>
-            <div class="h-full w-1/2 rounded  bg-gray-300/60 shadow-2xl flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
+            <div class="h-full md:w-1/2 rounded  bg-gray-300/60 shadow-2xl flex flex-wrap flex-col p-4 justify-between space-y-2 items-center">
                     <img src="./Images/news.jpg" class="w-12 h-12 rounded-full object-cover">
                     <p class="text-center text-wrap">
                         Fast delivery, eco-friendly, and premium quality charcoal. Definitely my go-to 
@@ -187,15 +190,15 @@
     </section>
 
     <section id="news">
-        <div class="h-96 w-full p-20 mx-auto space-y-2 bg-white/30">
-            <h1 class="text-center text-xl tracking-wide font-bold">
+        <div class="h-96 w-full mt-0 p-20 mx-auto space-y-2 bg-white/30">
+            <h1 class="text-center text-2xl md:text-xl tracking-wide font-bold">
                 Latest News
             </h1>
-            <p class="text-center">
+            <p class="text-center tracking-wide md:tracking-normal">
                 Stay updated with the latest insights tips, and trends in eco-friendly charcoal and clean energy.
             </p>
             <div class="flex flex-row flex-1 items-center space-x-6">
-            <div class="flex flex-col items-start space-y-4 h-full w-1/3 p-4 shadow-xl">
+            <div class="hidden md:flex flex-col items-start space-y-4 h-full w-1/3 p-4 shadow-xl">
                 <img src="./Images/news.jpg" alt="card1" class="h-32 w-full rounded">
                 <h3 class="text-center font-semibold">
                     The Art of grilling with premium Hardwood Charcoal
@@ -205,7 +208,7 @@
                 </p>
                 <a href="#" class="px-6 py-2 rounded bg-green-700 text-white hover:bg-red-500">Learn more</a>
             </div>
-            <div class="flex flex-col items-start space-y-4 h-full w-1/3 p-4 shadow-xl">
+            <div class="flex flex-col items-start space-y-4 h-full w-full md:w-1/3 p-4 shadow-xl">
                 <img src="./Images/about.jpg" alt="card1" class="h-32 w-full rounded">
                 <h3 class="text-center font-semibold">
                     How to Choose the Best Hardwood Charcoal Supplier
@@ -215,7 +218,7 @@
                 </p>
                 <a href="#" class="px-6 py-2 rounded bg-green-700 text-white hover:bg-red-500">Learn more</a>
             </div>
-            <div class="flex flex-col items-start space-y-4 h-full w-1/3 p-4 shadow-xl">
+            <div class="hidden md:flex flex-col items-start space-y-4 h-full w-1/3 p-4 shadow-xl">
                 <img src="./Images/card3.jpg" alt="card1" class="h-32 w-full rounded">
                 <h3 class="text-center font-semibold">
                     The Secret Behind Long-Lasting Charcoal Fires Lighting
@@ -230,19 +233,19 @@
     </section>
 
     <section id="cta">
-        <div style="background-image: url('./Images/CTA.jpg');" class="relative flex flex-col items-center space-y-2 p-4 h-40 mt-40 w-full bg-cover bg-center">
+        <div style="background-image: url('./Images/CTA.jpg');" class="relative flex flex-col items-center space-y-3 md:space-y-2 p-4 h-60 md:h-40 mt-60 md:mt-40 w-full bg-cover bg-center">
             <div class="absolute bg-black/60 inset-0 z-0 backdrop:blur-lg"></div>
-            <h1 class="relative z-10 text-center text-4xl text-white tracking-wide">
+            <h1 class="relative z-10 text-center text-3xl md:text-4xl text-white tracking-wide">
                 The Charcoal You Can Trust - Every Time.
             </h1>
-            <p class="relative z-10 text-center text-xl text-white">Get premium quality delivered to your doorstep</p>
+            <p class="relative z-10 text-center text-lg md:text-xl text-white">Get premium quality delivered to your doorstep</p>
             <a href="#" class="relative z-10 px-6 py-2 rounded bg-green-700 text-white hover:bg-red-600 hover:border-white">Order Now</a>
         </div>
     </section>
  <!-- Footer Section -->
 <footer id="last">
-    <div class="flex flex-col h-56 bg-black text-white w-full p-2 px-8">
-        <div class="flex flex-row flex-1 justify-around items-center">
+    <div class="flex flex-col h-72 md:h-56 bg-black text-white w-full md:pl-16 p-2 px-8">
+        <div class="flex flex-col-reverse md:flex-row flex-1 justify-evenly items-center">
             <div class="flex flex-col">
                 <h2 class="text-3xl mb-4">PrimeChar Energy</h2>
                 <div class="flex flex-row text-red-600 text-2xl">
@@ -251,18 +254,20 @@
                     <i class="fa-brands fa-x-twitter"></i>
                 </div>
             </div>
+            <div class="flex items-center mx-auto justify-between gap-16 md:gap-80">
             <div class="flex flex-col items-start">
-                <h1 class="font-bold text-xl mb-1">Quick Links</h1>
-                <a href="#">>Home</a>
-                <a href="#">>About Us</a>
-                <a href="#">>Blog</a>
-                <a href="#">>Contact Us</a>
+                <h1 class="font-bold text-lg md:text-xl mb-1">Quick Links</h1>
+                <a href="#home">>Home</a>
+                <a href="#about">>About Us</a>
+                <a href="#news">>Blog</a>
+                <a href="#contact">>Contact Us</a>
             </div>
-            <div class="flex flex-col">
+            <div id="contact" class="flex flex-col">
                 <h1 class="font-bold text-2xl mb-2">Contact Us</h1>
                 <a href="#">info@primecharenergy.com</a>
                 <a href="#">08182387495</a>
                 <a href="#">99046927218</a>
+            </div>
             </div>
         </div>
         <hr class="bg-black">
