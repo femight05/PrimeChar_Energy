@@ -24,6 +24,11 @@ animation-name: slideNav;
 animation-duration: 4s;
 }
 
+.show{
+    display: flex;
+    transition-delay: 2s;
+}
+
 @keyframes slideNav {
 form{
     opacity: 0; 
