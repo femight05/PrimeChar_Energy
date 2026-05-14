@@ -13,3 +13,30 @@ html{
 #card{
     box-shadow: 3px 5px 20px 0px black;
 }
+
+#hero{
+    animation-name: slideUp;
+    animation-duration: 4s;
+}
+
+#why{
+animation-name: slideNav;
+animation-duration: 4s;
+}
+
+@keyframes slideNav {
+form{
+    opacity: 0; 
+}
+to{
+    opacity: 1;
+}
+}
+@keyframes slideUp {
+    from{
+        opacity: 0; transform: translateY(40px);
+    }
+    to{
+        opacity: 1; transform: translateY(0px);
+    }
+}
