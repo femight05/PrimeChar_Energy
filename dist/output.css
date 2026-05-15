@@ -691,6 +691,10 @@ video {
   left: 0.75rem;
 }
 
+.left-2 {
+  left: 0.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
