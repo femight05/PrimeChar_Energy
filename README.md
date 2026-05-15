@@ -6,7 +6,7 @@ A modern and responsive landing page for **PrimeChar Energy**, a charcoal brand 
 
 ## 🚀 Live Demo
 
-[View Live Site](Not yet)
+[View Live Site](https://prime-char-energy.vercel.app/)
 
 ---
 
