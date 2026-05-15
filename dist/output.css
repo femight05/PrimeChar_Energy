@@ -2476,6 +2476,18 @@ video {
   line-height: 1.25rem;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
