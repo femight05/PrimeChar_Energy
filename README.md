@@ -6,13 +6,13 @@ A modern and responsive landing page for **PrimeChar Energy**, a charcoal brand 
 
 ## 🚀 Live Demo
 
-[View Live Site](https://your-live-link.com)
+[View Live Site](Not yet)
 
 ---
 
 ## 📸 Preview
 
-![PrimeChar Energy Preview](./images/preview.png)
+![PrimeChar Energy Preview](./Images/PrimeChar_Preview.jpg)
 
 ---
 
@@ -22,7 +22,7 @@ A modern and responsive landing page for **PrimeChar Energy**, a charcoal brand 
 - Modern UI layout
 - Hero section
 - About section
-- Product showcase
+- Product Overview
 - Customer testimonials
 - Contact section
 - Mobile-friendly navigation
@@ -44,8 +44,9 @@ A modern and responsive landing page for **PrimeChar Energy**, a charcoal brand 
 PrimeChar-Energy/
 │
 ├── index.html
-├── style.css
-├── script.js
+├── input.css
+├── js/
+│   └── script.js
 ├── images/
 │   ├── hero-image.jpg
 │   └── preview.png
@@ -110,7 +111,7 @@ This project was built to:
 **Oluwafemi Akinpelu**
 
 - GitHub: https://github.com/femight05
-- X (Twitter): https://twitter.com/your-handle
+- X (Twitter): https://x.com/AkinpeluFemi5
 
 ---
 
